@@ -5,7 +5,7 @@ hbs.registerHelper('getAnio', () => {
     return new Date().getFullYear();
 });
 
-hbs.registerHelper('capitalizar', (texto) => {
+hbs.registerHelper('capitalizar', (texto) => { //nos permite trasformar una palabra en minuscula
     let palabras = texto.split(' ');
     palabras.forEach((palabra, idx) => {
         palabras[idx] = palabra.charAt(0).toUpperCase() +
